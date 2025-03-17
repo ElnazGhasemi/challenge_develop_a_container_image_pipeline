@@ -25,10 +25,9 @@ env:
 jobs:
 
   integration:
-    uses: ./.github/workflows/ci.yml
+    uses: ElnazGhasemi/challenge_develop_a_container_image_pipeline_starter/.github/workflows/python-app.yml@main
     permissions:
       contents: read
-      checks: write
       
   build:
     needs: [integration]
